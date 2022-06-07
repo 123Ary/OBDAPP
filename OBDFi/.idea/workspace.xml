@@ -217,6 +217,7 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/xml/network_security_config.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -254,7 +255,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="G:/software/androidsdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/sc/main/python" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -272,9 +273,6 @@
     <key name="android.template.-1603997468">
       <recent name="com.dts" />
     </key>
-    <key name="android.template.1071794532">
-      <recent name="com.dts" />
-    </key>
     <key name="android.template.807456456">
       <recent name="com.dts" />
     </key>
@@ -289,16 +287,19 @@
       <recent name="com.dts.obdfi" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\Android\BACKUP\backup5\OBDFi\app\sc\main\python" />
       <recent name="F:\Android\BACKUP\backup5\OBDFi\app\src\main" />
       <recent name="F:\Android\BACKUP\backup5\OBDFi\app\src\main\res\drawable" />
       <recent name="F:\Android\BACKUP\backup5\OBDFi\app\src\main\python" />
       <recent name="F:\Android\BACKUP\backup5\OBDFi\app\libs" />
-      <recent name="F:\Android\OBDFi\app\src\main\res\drawable" />
     </key>
     <key name="android.template.860840377">
       <recent name="com.dts.obdfi" />
     </key>
     <key name="android.template.-1985433021">
+      <recent name="com.dts" />
+    </key>
+    <key name="android.template.1071794532">
       <recent name="com.dts" />
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -407,10 +408,14 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="412" y="205" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1366.728@0.0.1366.728" timestamp="1652033036526" />
-    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1652850823677">
+    <state x="263" y="118" key="AndroidCreateResourceDirectoryDialog" timestamp="1654173493648">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1652850823677" />
+    <state x="263" y="118" key="AndroidCreateResourceDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1654173493648" />
+    <state x="463" y="118" key="FileChooserDialogImpl" timestamp="1654171714610">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="118" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1654171714610" />
     <state width="1158" height="121" key="GridCell.Tab.0.bottom" timestamp="1653909568235">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

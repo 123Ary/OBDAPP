@@ -742,7 +742,6 @@ int statusCode=connection.getResponseCode();
         Format f = new SimpleDateFormat("M-d-yyyy");
         String strDate = f.format(new Date());
 
-        System.out.println("dattttttttttttttttteeeeeeeeeeee :" + strDate);
 
         System.out.println("user name :" + userName);
         System.out.println("password :" + password);

@@ -64,8 +64,8 @@ EditText email,password;
         String emailValue=email.getText().toString();
 
         String passwordValue=password.getText().toString();
-      // startActivity(new Intent(Login.this, AdminHome.class));
-     String status=u.adminLogin(emailValue,passwordValue);
+       startActivity(new Intent(Login.this, AdminHome.class));
+   /* String status=u.adminLogin(emailValue,passwordValue);
 
         if(status.contentEquals("Success"))
         {

@@ -210,10 +210,11 @@ logout=(Button)findViewById(R.id.logout);
 
                     t.setVisibility(View.INVISIBLE);
 
-               /* if(!Python.isStarted())
-                {
-                    Python.start(new AndroidPlatform(this));
-                }*/
+                    if(!Python.isStarted())
+                    {
+                        Python.start(new AndroidPlatform(this));
+                    }
+
                     String hexname=  pathh + "/" + actualfilename;
 String binFile=actualfilename.replace(".hex",".bin");
 System.out.println("biiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii :"+binFile);
@@ -236,40 +237,23 @@ System.out.println("biiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii :"+binFile);
 
                                     String hexFile=pathh + "/" + actualfilename;
                                     String bin=pathh + "/" + binFileName;
-                                    GenerateFiles gf=new  GenerateFiles();
-                                    File ff=new File(hexFile);
-                                //    Python py=Python.getInstance();
-                                //    PyObject pyObj=py.getModule("conversion");
-                                //    PyObject obj=    pyObj.callAttr("main",hexname,binname);
-                                   //  result=obj.toString();
-                                    try {
-                                        runOnUiThread(new Runnable() {
-                                            public void run() {
-                                                try {
-                                                    InputStream inputStream = getAssets().open("simpson.bin");
-                                                    int size = inputStream.available();
-                                                    byte[] buffer = new byte[size];
-                                                    inputStream.read(buffer);
-                                                    String msg= gf.generateBin(buffer,hexFile,binFileName);
-                                                    if(msg.contentEquals("success"))
-                                                    {
-                                                        AlertDialog dialog = new AlertDialog.Builder(MainActivity.this).setTitle("Converted HEX to BIN" )
-                                                                .setNeutralButton("ok", null).show();
 
-
-                                                    }
-
-                                                } catch (Exception e) {
-                                                    e.printStackTrace();
-                                                }
-
-                                            }
-
-                                        });
-
-                                    } catch (Exception e) {
-                                        e.printStackTrace();
+                                    Python py=Python.getInstance();
+                                    PyObject pyObj=py.getModule("conversion");
+                                    PyObject obj=    pyObj.callAttr("main",hexname,binname);
+                                    result=obj.toString();
+                                    if(result.contentEquals("success")) {
+                                        AlertDialog dialog = new AlertDialog.Builder(MainActivity.this).setTitle("Successfully Converted HEX to BIN")
+                                                .setNeutralButton("ok", null).show();
                                     }
+                                 //   GenerateFiles gf=new  GenerateFiles();
+                                  //  File ff=new File(hexFile);
+                                    /*Python py=Python.getInstance();
+                                    PyObject pyObj=py.getModule("conversion");
+                                    PyObject obj=    pyObj.callAttr("main",hexname,binname);
+                                     result=obj.toString();
+                                    AlertDialog dialog = new AlertDialog.Builder(MainActivity.this).setTitle("Successfully Converted HEX to BIN" )
+                                            .setNeutralButton("ok", null).show();
                                     //   }
                                   /*  else {
                                        // Python py = Python.getInstance();
@@ -478,8 +462,8 @@ System.out.println("biiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii :"+binFile);
 
         if(v.getId()==R.id.button2)
         {
-          //  flag=0;
-            flag=8;
+           // flag=0;
+           flag=8;
 
             Intent intent = new Intent();
             //sets the select file to all types of files
